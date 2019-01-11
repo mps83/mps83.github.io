@@ -15,6 +15,7 @@ main {
 main h1 {
     color: white;
     text-align: center;
+    font-family: serif;
     vertical-align: middle;
     position: relative;
     top:40%;
