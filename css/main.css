@@ -100,9 +100,10 @@
 .menu-branding .portrait {
   width: 250px;
   height: 250px;
-  background: url("../assets/images/css.svg");
-  border: solid 3px #eece1a;
+  background: url("../assets/images/my-img.jpg");
+  border: solid 4px #eece1a;
   border-radius: 50%;
+  opacity: 1;
 }
 
 .menu .nav-item {
