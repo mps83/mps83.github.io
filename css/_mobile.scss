@@ -61,6 +61,9 @@
 // Smartphones
 @include mediaSm {
     main#home h1 {
-        margin-top: 10vh;
+        margin-top: 15vh;
+    }
+    main#about h1 {
+        margin-top: 8vh;
     }
 }
