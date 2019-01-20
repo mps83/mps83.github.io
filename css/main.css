@@ -71,7 +71,7 @@
 .menu-nav {
   margin: 0;
   padding: 0;
-  background: #0f0e0e;
+  background: #020202;
   list-style: none;
   -webkit-transform: translate3d(0, -100%, 0);
           transform: translate3d(0, -100%, 0);
@@ -85,7 +85,7 @@
 }
 
 .menu-branding {
-  background: #1c1b1b;
+  background: #0f0f0f;
   -webkit-transform: translate3d(0, 100%, 0);
           transform: translate3d(0, 100%, 0);
   -webkit-transition: all 0.5s ease-out;
@@ -159,6 +159,159 @@
           transition-delay: 0.4s;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #0f0f0f;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+body#bg-img {
+  background: url(../assets/images/background-img.jpg.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body#bg-img:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(15, 15, 15, 0.8);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+}
+
+h1.lg-heading,
+h2.lg-heading,
+h3.lg-heading {
+  font-size: 6rem;
+}
+
+h1.sm-heading,
+h2.sm-heading,
+h3.sm-heading {
+  margin-bottom: 2rem;
+  padding: 0.2rem 1rem;
+  background: rgba(20, 20, 20, 0.6);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.text-secondary {
+  color: #ff8400;
+}
+
+main {
+  padding: 4rem;
+  min-height: calc(100vh - 60px);
+}
+
+main .icons {
+  margin-top: 1rem;
+}
+
+main .icons a {
+  padding: 0.4rem;
+}
+
+main .icons a:hover {
+  color: #ff8400;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+main#home {
+  overflow: hidden;
+}
+
+main#home h1 {
+  margin-top: 20vh;
+}
+
+.about-info {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+      grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.about-info .bio-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: bioimage;
+  margin: auto;
+  border-radius: 50%;
+  border: #ff8400 3px solid;
+}
+
+.about-info .bio {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: bio;
+  font-size: 1.5rem;
+}
+
+.about-info .job1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: job1;
+}
+
+.about-info .job2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: job2;
+}
+
+.about-info .job3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: job3;
+}
+
+.about-info .job {
+  background: #1c1c1c;
+  padding: 0.5rem;
+  border-bottom: #ff8400 5px solid;
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: black;
+  color: #fff;
+  height: 60px;
+}
+
 @media screen and (max-width: 768px) {
   main {
     -webkit-box-align: center;
@@ -197,106 +350,16 @@
     width: 150px;
     height: 150px;
   }
+  .about-info {
+        grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh;
   }
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  background-color: #1c1b1b;
-  color: #fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5;
-}
-
-body#bg-img {
-  background: url(../assets/images/background-img.jpg.jpeg);
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-body#bg-img:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: rgba(28, 27, 27, 0.8);
-}
-
-h1,
-h2,
-h3 {
-  margin: 0;
-  font-weight: 400;
-}
-
-h1.lg-heading,
-h2.lg-heading,
-h3.lg-heading {
-  font-size: 6rem;
-}
-
-h1.sm-heading,
-h2.sm-heading,
-h3.sm-heading {
-  margin-bottom: 2rem;
-  padding: 0.2rem 1rem;
-  background: rgba(33, 32, 32, 0.6);
-}
-
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-header {
-  position: fixed;
-  z-index: 2;
-  width: 100%;
-}
-
-.text-secondary {
-  color: #ff8400;
-}
-
-main {
-  padding: 4rem;
-  height: 100%;
-}
-
-main .icons {
-  margin-top: 1rem;
-}
-
-main .icons a {
-  padding: 0.4rem;
-}
-
-main .icons a:hover {
-  color: #ff8400;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-
-main#home {
-  overflow: hidden;
-}
-
-main#home h1 {
-  margin-top: 20vh;
 }
 /*# sourceMappingURL=main.css.map */
