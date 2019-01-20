@@ -320,6 +320,7 @@ main#home h1 {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    padding: 2.5rem;
   }
   main .lg-heading {
     line-height: 1;
