@@ -100,7 +100,7 @@
 .menu-branding .portrait {
   width: 250px;
   height: 250px;
-  background: url("../assets/images/my-img.jpg");
+  background: url("../assets/images/my-img.png");
   border: solid 4px #ff8400;
   border-radius: 50%;
   opacity: 1;
@@ -268,6 +268,8 @@ main#home h1 {
   -ms-grid-column: 1;
   grid-area: bioimage;
   margin: auto;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   border: #ff8400 3px solid;
 }
@@ -346,7 +348,7 @@ main#home h1 {
             transform: translate3d(100%, 0, 0);
   }
   .menu-branding .portrait {
-    background: url(../assets/images/my-img2.jpg);
+    background: url(../assets/images/my-img.png);
     width: 150px;
     height: 150px;
   }
